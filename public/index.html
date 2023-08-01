@@ -21,12 +21,6 @@
         username : 'Buddy',
         greeting : 'hello',
         language : 'english',
-        new_lang: '',
-        new_greet: '',
-        new_greet(){
-            
-        },
-
         
         greet() {
             // call the api and get a greeting back
@@ -64,17 +58,21 @@
         <input type="text" x-model="username" >
         <input type="button" class="btn btn-info" value="Greet" x-on:click="greet()" >
 
-    </div>
-
+        <br>
+        <br>
+        
     <div>
         <h2>Add language</h2>
         <div>
-            Language: <input type="text" x-model="new_language" placeholder="new language" >
+            Language: <input type="text" placeholder="new language" >
         
-            Greeting: <input type="text" x-model="new_greeting" placeholder="new greeting" >
+            Greeting: <input type="text" placeholder="new greeting" >
             <button class="btn btn-info">Add language</button>
         </div>
     </div>
+    </div>
+
+    
 
 
     <!-- MDB -->
